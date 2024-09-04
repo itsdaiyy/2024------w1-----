@@ -40,6 +40,8 @@ h2 {
   font-size: 40px;
 }
 
+/* utilities */
+
 .container {
   max-width: 1296px;
   margin: 0 auto;
@@ -97,6 +99,10 @@ h2 {
   width: calc(50% - var(--gutter) / 2);
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -111,6 +117,10 @@ h2 {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mx-auto {
+  margin-inline: auto;
 }
 
 .py-48 {
@@ -169,4 +179,37 @@ h2 {
 
 .social-list li + li {
   margin-left: 40px;
+}
+
+/* animations */
+.banner-img {
+  --width: 100%;
+  aspect-ratio: 1 / 1.3333;
+}
+
+.banner-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--width);
+  background-color: #fff;
+}
+
+.animation-to-right {
+  --width: 100%;
+  position: relative;
+}
+
+.animation-to-right::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: var(--width);
+  background-color: var(--color-grey);
 }
