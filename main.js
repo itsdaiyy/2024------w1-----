@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         start: "top 80%",
         end: () => `+=${el.offsetHeight}px`,
         scrub: 1,
-        markers: true,
       },
       opacity: 0,
       y: 20,
